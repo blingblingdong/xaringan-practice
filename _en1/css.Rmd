@@ -358,3 +358,32 @@ class: bkb
 ]
 ]
 
+---
+class: center, bottom, inverse
+layout: false
+
+# More info
+
+--
+
+本投影片是使用R package [**xaringan**](https://github.com/yihui/xaringan).
+
+--
+
+查克拉來自[**remark.js**](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [**R Markdown**](https://rmarkdown.rstudio.com).
+
+--
+
+點擊進入[**網站**](https://cs.lsyverycute.com)，[**Github**](https://github.com/blingblingdong/distill_for_final)，[**本簡報**](https://xaringan.lsyverycute.com)
+
+--
+
+### 謝謝聆聽
+
+--
+```{r, echo=FALSE, out.width="30%"}
+knitr::include_graphics("sheepgif/sheep.gif")
+```
+--
+
+THE END
