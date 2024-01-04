@@ -7,6 +7,7 @@
 .bkb{
   background-color:white;
   color: #0F2E3D;
+  font-family: Arial,fantasy;
 }
 
 .inverse2 {
@@ -15,12 +16,20 @@
   font-family: "Arial" ,fantasy;
 }
 
+.tt{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial,fantasy;
+}
+
 
 .body {background-color: #92a8d1;}
 
 .pull-left {
   float: left;
   width: 47%;
+  text-align: left;
 }
 
 .pull-left2 {
