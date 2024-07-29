@@ -1,0 +1,120 @@
+---
+title: "準備方法與步驟"
+author: "董宸賓"
+date: "2024-08-02"
+output:
+  xaringan::moon_reader:
+    self_contained: FALSE
+    lib_dir: libs
+    css: "css2.css"
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      seal: false
+---
+class: middle
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library('xaringan')
+library('reticulate')
+library("renderthis")
+library("ggplot2")
+library("tidyverse")
+library("gganimate")
+xaringanExtra::use_panelset()
+xaringanExtra::use_webcam()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_broadcast()
+```
+
+
+<div style="background-image: url('新增副標題/20.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 70vh;">
+  <!-- 這裡可以放置其他內容 -->
+</div>
+
+---
+class: middle
+
+
+<div style="background-image: url('新增副標題/21.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 60vh;">
+  <!-- 這裡可以放置其他內容 -->
+</div>
+
+---
+class: middle
+
+
+<div style="background-image: url('新增副標題/22.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 60vh;">
+  <!-- 這裡可以放置其他內容 -->
+</div>
+
+---
+class: middle
+
+
+<div style="background-image: url('新增副標題/23.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 60vh;">
+  <!-- 這裡可以放置其他內容 -->
+</div>
+
+
+---
+class: inverse2, middle
+
+
+```{r, echo = FALSE}
+data1 <- tribble(
+  ~時間, ~國文, ~英文, ~社會, ~數學, ~備註,
+  "一模", 13, 13, 14, 10,   "難：國、英手寫題時間配置問題\n解：維持進度、增加手寫頻率",
+  "二模", 15, 14, 15, 11,   "難：英手寫失分多、數難題卡時間\n解：翻譯與作文增加頻率、加強部分",
+  "三模", 14, 14, 14, 10,   "難：總體時間控制得當\n解：加強手寫、放棄部分數題",
+  "學測", 15, 13, 15, 13,   "放寒假"
+)
+
+data1 <- data1 %>%
+  mutate(時間 = factor(時間, levels = c("一模", "二模", "三模", "學測")))
+
+```
+
+
+
+```{r, echo=FALSE, out.width='25%' }
+library(echarts4r)
+
+library(echarts4r)
+
+data1 %>%
+  mutate(total = 國文+英文+數學+社會)%>%
+  group_by(時間) %>%
+  e_charts(時間, timeline = TRUE) %>%
+  e_line(total, name = "成績", symbolSize = 12) %>%
+  e_bar(國文)%>%
+  e_bar(英文)%>%
+  e_bar(社會)%>%
+  e_bar(數學)%>%
+  e_title("成績變化") %>%
+  e_x_axis(name = "時間") %>%
+  e_y_axis(name = "成績", min = 0, max = 60) %>%
+  e_legend(show = TRUE)%>%
+  e_labels(show = TRUE) %>%
+  e_tooltip(
+    trigger = "axis",
+    formatter = htmlwidgets::JS("
+      function(params) {
+        var note = {
+          '一模': '難：國、英手寫題時間配置問題<br>解：維持進度、增加手寫頻率',
+          '二模': '難：英手寫失分多、數難題卡時間<br>解：翻譯與作文增加頻率、加強部分',
+          '三模': '難：總體時間控制得當<br>解：加強手寫、放棄部分數題',
+          '學測': '放寒假'
+        };
+        var text = note[params[0].name] || '';
+        return '<div style=\"font-size: 20px;\">' + text + '</div>';
+      }
+    ")
+  ) %>%
+  e_theme("chalk")
+```
+
+
+
+
