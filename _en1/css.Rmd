@@ -1,6 +1,6 @@
 ---
-title: "Dogs can match some words with objects"
-author: "Bling"
+title: "韓非子與馬基維利"
+author: "..."
 date: "2024-04-16"
 subtitle: "College English 2 Presentation"
 output:
@@ -18,190 +18,152 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library('xaringan')
+xaringanExtra::use_tachyons()
 library('reticulate')
-library("renderthis")
 xaringanExtra::use_panelset()
 xaringanExtra::use_webcam()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
 ```
 
+class: middle
 
-class:inverse2
+## 韓非子：性惡論
+
+
+.bg-washed-green.b--white.ba.bw2.br0.shadow-2.ph4.mt1[
+醫善吮人之傷，含人之血，非骨肉之親也，利所加也。
+
+.tr[
+韓非子：備內
+]]
+
+
+認為人為利所趨
+
+.bg-washed-green.b--white.ba.bw1.br1.shadow-2.ph4.mt5[
+治國不恃人之為善也, 而用其不得為非也。…故不務德而務法.
+
+.tr[
+韓非子：顯學
+]]
+
+
+國家不依靠人性之善而昌盛，應以法來規範人臣，治理國家
+
+---
+
+class: middle, inverse2
+
+## 馬基維利：恐懼統治理論
+
+.bg-black.b--white.ba.bw1.br1.shadow-2.ph4.mt5[
+被人畏懼比受人愛戴是安全得多的
+
+.tr[
+]]
+
+
+恐懼比起感恩，更能深植人心，使人民敬畏君主
+
+.bg-black.b--white.ba.bw1.br1.shadow-2.ph4.mt5[
+在守信和失信方面，君王應當效法狐狸與獅子
+.tr[
+]]
+
+
+君主不應死守信諾，要不擇手段，但也要懂得偽裝
+
+---
+
+
+class: middle
+
+## 相同：對人性趨利避害的觀察
+
+兩者皆為實用主義，不避諱對人類本性「不善」的部分描寫，甚至加以利用。
+
+1.以獎賞使人民勤於生產工作
+
+2.以懲罰使臣民不敢僭越
+
+---
+
+class: middle, inverse2
+
+## 不同：對於道德之觀
+
+.bg-black.b--white.ba.bw1.br1.shadow-2.ph4.mt5[
+嚴家無悍虜，而慈母有敗子，吾以此知威勢之可以禁暴，而德厚之不足以止亂也
+.tr[
+韓非子：顯學篇
+]]
 
 
 
-Class and name: Thursday D56, 董宸賓<br>
+韓非子主張道德無效，以威勢、法代之。
 
-Article Title: “Dogs can match some words with objects, study suggests”<br>
+<strong>馬基維利認為展示美德有助於治理國家</strong>
 
-Author: Issy Ronald<br>
-
-Website: CNN<br>
-
-URL: https://edition.cnn.com/2024/04/01/world/dogs-words-objects-study-intl-scli-scn/index.html<br>
-
-Date of Article: April 1, 2024
+雖同樣以國家利益為第ㄧ要務，但馬基維利仍認為君主需有ㄧ定之美德，尤其是建立君民互信，是長久的治國良方。
 
 ---
 
 class: bkb, middle
 
-### When we use "dog" in a sentence...
-
-.pull-left[
-
-dog food：sth you mess up
-
-```{r, out.width = '90%',echo=FALSE}
-knitr::include_graphics("libs/food.jpg")
-```
-
-]
+## 1.相同之處：威權治國
 
 --
 
-.pull-right[
-
-also in Chinese...
-
-<br>
-
-```{r, out.width = '90%',echo=FALSE}
-knitr::include_graphics("libs/狗都不吃.jpg")
-```
-
-]
-
----
-
-class: bkb
-
-### but they make several goods to our society...
-
-
-```{r, out.width = '100%',echo=FALSE}
-knitr::include_graphics("libs/地震狗.jpg")
-```
-
----
-
-class: inverse2, middle
-
-## Why dogs?
-
-- Sturdy body
-
-- Strong sense of feeling
-
-- smart brain
-
-- high obedience
-
----
-
-class: inverse2
-
-### In the past, we thought dogs can only understand simple "verbs", and study showed the same result by involved them fetching specific objects when asked...
-
-
-```{r, out.width = '90%',echo=FALSE}
-knitr::include_graphics("libs/舊實驗.jpg")
-```
-
----
-
-## THE NEW EXPERIMENT
-
-```{r, out.width = '110%',echo=FALSE, fig.align='center'}
-knitr::include_graphics("libs/流程.jpg")
-```
-
-
----
-
-###  RESULT1：Familiar and unfamiliar objects
-
-If the noun is familiar to the dog, there will be a greater response in the dog's brain.
-
-```{r, out.width = '100%',echo=FALSE}
-knitr::include_graphics("libs/熟悉.jpg")
-```
-
----
-
-###  RESULT2：Matching words with objects
-
-when a dog understands a word, it means in the absence of the object, the dog activates a so-called mental representation, thus...
-
-```{r, out.width = '100%',echo=FALSE}
-knitr::include_graphics("libs/符合.jpg")
-```
-
-
----
-
-## Holding a hesitant attitude...
-
-- the experiment was a “clever” concept but it showed dogs understood a “stimulus” followed by an “important consequence” rather than the meaning intrinsic to a word.
-
-- dogs lacked the two areas of the brain crucial for human understanding of language therefore the EEG pattern highlighted by the researchers was not shared by humans.
-
-- If we’re making a claim that the pattern of the brainwave shows you that it must be an understanding of words, you need it to be the same pattern
-
----
-
-class: inverse2, middle
-
-## If we can train dogs better...
-
-.pull-left[
-
-```{r, out.width = '100%',echo=FALSE}
-knitr::include_graphics("libs/消防員.jpg")
-```
-
-]
-
-.pull-right[
-
-```{r, out.width = '80%',echo=FALSE}
-knitr::include_graphics("libs/汪汪隊.jpg")
-```
-
-]
+### 馬基維利與韓非子皆強調樹立威嚴的形象。
 
 
 ---
 
 class: inverse2, middle
 
-### Rapidly advancing neuroscience...
+## 馬基維利
 
---
+### 鼓勵君主以「恐懼」作為治民手段
 
-### can lead to exciting prospects for understanding our own brains
+### 被人畏懼比受人愛戴是安全得多的
 
---
-
-### but also...
-
-### infringe upon our privacy and  rights
-
-```{r, out.width = '50%',echo=FALSE}
-knitr::include_graphics("libs/頭盔.jpg")
-```
+君主應使人民畏懼，從而樹立威嚴形象
 
 ---
-class: center, middle, inverse
 
+class: inverse2, middle
 
-## 謝謝聆聽
+## 韓非子
+
+### 注重操作「勢」以展現「權」
 
 --
-```{r, echo=FALSE, out.width="30%"}
-knitr::include_graphics("sheepgif/sheep.gif")
-```
---
 
-THE END
+### 「主者，以刑德制臣者也，今君人者釋其刑德而使臣用之，則君反制於臣矣。」
+
+
+君主在施予刑罰應親力親為，作為樹立威望之手段，絕對不能假藉臣子之手，以免臣子之威望在君之上。
+
+---
+
+## 不同之處：
+
+### 馬基維利認為認為君主與人民應建立良好信任關係。
+
+- 透過輝煌戰績贏得崇拜
+
+- 處理內部事務的手段
+
+- 以獎賞刺激人民
+
+- 參加祭典與活動籠絡人心
+
+---
+
+### 小結
+
+這樣的差異，體現韓非在法家權術思想下，更注重君主掌握權力，人民對於君王的臣服來自於對權力的恐懼。
+
+馬基維利則鼓勵君主與臣民建立良好關係，人民的臣服，來自對君王能做出英明的判斷與治國的手段，而非絕對的恐懼。
+
